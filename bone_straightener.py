@@ -16,8 +16,8 @@ class bone_straightener_main():
 
 
         for bone in mybones:
-            bone.roll = 0
             print("current bone - ", bone)
+            bone.roll = 0
             tail_values = bone.tail
             head_values = bone.head
             x_values = [tail_values.x, head_values.x]
@@ -36,10 +36,9 @@ class bone_straightener_main():
             if smallbones == True:
                 print("shrinking bones")
                 bone.tail.z =  head_values.z + .05
-                bone.tail.x = head_values.x
-                bone.tail.y = head_values.y
             else:
                 bone.tail.z = head_values.z + bonelength
-                bone.tail.x = head_values.x
-                bone.tail.y = head_values.y
-        return {'FINISHED'}
+            bone.tail.x = head_values.x
+            bone.tail.y = head_values.y
+
+        return {"FINISHED"}

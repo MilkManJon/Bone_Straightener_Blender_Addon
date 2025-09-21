@@ -31,6 +31,7 @@ class MySettings(PropertyGroup):
         description="automatically disconnect bones, if you don't check this the result may not look good. (note, this will disconnect them. Not unparent them.",
         default = True
         )
+    
     ShrinkBones : BoolProperty(
         name="ShrinkBones",
         description="automatically shrink bones to the size they would be if you exported a model from a heavy iron game.",
@@ -66,7 +67,7 @@ class Straighten_Bones(bpy.types.Operator):
     bl_description = "Straightens bones to were they are all pointing straight up."
     bl_options = {'PRESET', 'UNDO'}
     
-    def execute(self,context):
+    def execute(self, context):
         bone_straightener.bone_straightener_main.execute(self,bpy.context.scene.my_tool.AutoDisconnectBones, bpy.context.scene.my_tool.ShrinkBones)
         return {'FINISHED'}
 classes = (
