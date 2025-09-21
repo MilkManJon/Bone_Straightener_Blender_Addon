@@ -1,7 +1,6 @@
 # Bone_Straightener_Blender_Addon
 This is a blender addon that straightens all of the selected bones while in edit mode. 
-This addon was specifically made for creating rigged models for Modded licensed games by Heavy Iron Studios, but you can use this for whatever purpose you like of course. 
-
+This addon was specifically made for creating rigged models for Modded licensed games by Heavy Iron Studios, but you can use this for whatever purpose you like.
 __How to use:__
 
 There are two checkboxes, one for disconnecting bones from eachother and another for shrinking the bones.
